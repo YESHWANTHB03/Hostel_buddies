@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hostel Buddies</title>
+	<link rel="icon" href="logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@700&family=Noto+Sans+Symbols+2&family=Spectral:wght@600&display=block");
+		@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+		:root {
+			--white: #ffffff;
+			--light: #f0eff3;
+			--black: #000000;
+			--dark-blue: #1f2029;
+			--dark-light: #353746;
+			--red: #da2c4d;
+			--yellow: #f8ab37;
+			--grey: #ecedf3;
+		}
+
+		body {
+			width: 100%;
+			background: var(--dark-blue);
+			overflow-x: hidden;
+			font-family: "Poppins", sans-serif;
+			font-size: 17px;
+			line-height: 30px;
+			font-weight: 700;
+			-webkit-transition: all 300ms linear;
+			transition: all 300ms linear;
+			font-family: Poppins, Poppins;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		p {
+			font-family: "Poppins", sans-serif;
+			font-size: 17px;
+			line-height: 30px;
+			color: var(--white);
+			letter-spacing: 1px;
+			font-weight: 500;
+			-webkit-transition: all 300ms linear;
+			transition: all 300ms linear;
+		}
+		
+
+		.background-color {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--dark-blue);
+			z-index: 1;
+			-webkit-transition: all 300ms linear;
+			transition: all 300ms linear;
+		}
+
+	
+
+		header {
+			display: flex;
+			align-items: center;
+			background-color: #000;
+			padding: 20px 20px;
+			width: 100%;
+			justify-content: center;
+		}
+
+		.logo img {
+			width: 50px;
+			margin-right: 10px;
+		}
+
+		h1 {
+			font-family: Poppins, sans-serif;
+			color: #fff;
+			font-size: 28px;
+			font-weight: 700;
+			margin: 0;
+			justify-content: center;
+			
+		}
+
+		.nav-container {
+			text-align: left;
+			padding-left: 20px;
+		}
+
+		.nav-container a {
+			text-decoration: none;
+			margin: 0 10px;
+
+		}
+
+		form {
+			background-color: transparent;
+			margin: 20px;
+			padding: 20px;
+			border-radius: 0;
+			box-shadow: none;
+		}
+ h2 {
+      color: #61a3ba;
+      text-align: center;
+font-weight: 700;
+    }
+
+		label {
+			font-weight: bold;
+		}
+
+	
+		.icon-container {
+			font-size: 36px;
+			margin: 20px 0;
+			color: #ffc107;
+		}
+
+	
+a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+		
+
+		.nav-container {
+			display: flex;
+			justify-content: space-evenly;
+			font-size: 13px;
+
+		}
+
+		.nav-container a {
+			flex: 1;
+		}
+
+		
+		.form-container {
+			margin-top: 7vh;
+			text-align: center;
+
+			height: 60px;
+		}
+
+		.centered-radio-text {
+			text-align: center;
+		}
+
+		a {
+			color: white;
+font-weight: 700;
+		}
+
+@keyframes slideIn {
+            from {
+                transform: translateY(-100px);
+            }
+
+            to {
+                transform: translateY(0);
+            }}
+
+ .container {
+      padding: 20px 0;
+      background-color: #1f2029;
+      animation: slideIn 1.5s ease forwards; 
+width: 80%;   
+}
+.container img {
+    width: 100%;     
+padding: 0;     
+margin: 0; 
+}
+
+.info-section {
+    background-color: #1f2029;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    word-wrap: break-word;
+    border: 2px solid #ffffff;
+ 
+}
+
+.info-section {
+    background-color: #1f2029;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    word-wrap: break-word;
+   
+ 
+}
+
+.section-title {
+    color: #61a3ba;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+
+.footer {
+    background-color: #1f2029;     
+color: #fff; 
+    text-align: center; 
+    padding: 10px 0; 
+        left: 0;
+    bottom: 0;
+    width: 100%; }
+
+
+	</style>
+</head>
+
+<body>
+	<div class="others">
+		<header>
+			
+			<div class="logo">
+				<img src="logo.png"
+					alt="Logo" />
+			</div>
+			<h1>Hostel Buddies</h1>
+		</header>
+		<br />
+		<div class="nav-container">
+    			<p class="mb-4 pb-2"><i class='uil uil-chat-bubble-user'></i> </p>
+    			<a href="./index.html">Home</a>
+			<p class="mb-4 pb-2"><i class='uil uil-book-reader'></i> </p>
+    			<a href="./clean.html">Room Cleaning</a>
+    			<p class="mb-4 pb-2"><i class='uil uil-wifi-router'></i> </p>
+    			<a href="./wifi.html">Wifi Renewal</a>
+    			<p class="mb-4 pb-2"><i class='uil uil-outgoing-call'></i> </p>
+    			<a href="./emergency.html">Emergency</a>
+    			<p class="mb-4 pb-2"><i class='uil uil-book-reader'></i> </p>
+    			<a href="./register.html">Sign Up</a>
+			
+		</div>
+
+		<br />
+  <div class="container">
+
+    
+
+<div class="info-sections">
+    <h2>Welcome Hostel Buddies! <h2>
+<br>
+    <p class="section-text">This is your home away from home, the hostels at VIT is more than four walls and a roof. They have been designed to provide a comfortable, safe, inclusive and secure living even as they provide opportunities to form lasting friendships and ease the transition from home to college. Residential staff is always available to support the students from different backgrounds to promote community</p>
+</div>
+<br>
+<div class="container img">
+<img src="vit entrance.png" alt="VIT Entrance" width="1500" height="600" style="width: 100%; padding: 0;">
+</div>
+        
+
+<br>
+                      
+  </div>
+
+<div class="info-section">
+    <h2 class="section-title">Dining</h2>
+<br>
+    <p class="section-text">Healthy, wholesome food and a variety of dining options are available to the hostel students. Given the great diversity of tastes and cultures, students have access to multi-cuisine catering services that serve to suit vegetarian, non-vegetarian, and international palates.
+Students can also choose and order from a limited list of special dishes available on prior registration at the restaurant-style mess. Dining areas are open as early as 7:00 AM with night canteens available from 10:30 PM to 12:30 AM. The kitchens are hygienically operated and adhere to the prescribed food standards. A balanced menu is prepared every month by the Student Mess and Menu Committee in consultation with the hostel administrators.
+For those who want to try out different cuisines, a variety of hygienic food facilities are available on campus. A popular eating spot is the 600 square meters Food Court that serves delicious non-vegetarian and vegetarian food at reasonable prices. Fast food outlets are also attached to both the Men’s and Women’s Hostels.</p>
+</div>
+
+<div class="container img">
+<img src="mess.jpg" alt="VIT Entrance" width="1500" height="600" style="width: 100%; padding: 0;">
+</div>
+
+<div class="info-section">
+    <h2 class="section-title">Events</h2>
+<br>
+    <p class="section-text">Diverse events are periodically organised within the hostels to help the residents unwind, network, exhibit their talents and volunteer with the communities they live and study. To name a few, weekend movie screenings, DJ nights, cultural and sports competitive events are made available for residents to have a memorable hostel life. There are regular visits to old age and children’s homes. Workshops on Self-Defence and special lectures are regularly hosted in the hostels.</p>
+</div>
+
+<div class="container img">
+<img src="sam.jpg" alt="VIT Entrance" width="1500" height="600" style="width: 100%; padding: 0;">
+</div>
+
+<div class="container img">
+<img src="gravitas.jpg" alt="VIT Entrance" width="1500" height="600" style="width: 100%; padding: 0;">
+</div>
+
+
+<div class="info-section">
+    <h2 class="section-title">About Us</h2>
+<br>
+    <p class="section-text">VIT was established with the aim of providing quality higher education on par with international standards. It persistently seeks and adopts innovative methods to improve the quality of higher education on a consistent basis.The campus has a cosmopolitan atmosphere with students from all corners of the globe. Experienced and learned teachers are strongly encouraged to nurture the students. The global standards set at VIT in the field of teaching and research spur us on in our relentless pursuit of excellence. In fact, it has become a way of life for us. The highly motivated youngsters on the campus are a constant source of pride. Our Memoranda of Understanding with various international universities are our major strength. They provide for an exchange of students and faculty and encourage joint research projects for the mutual benefit of these universities. Many of our students, who pursue their research projects in foreign universities, bring high quality to their work and esteem to India and have done us proud. With steady steps, we continue our march forward. We look forward to meeting you here at VIT.</p>
+</div>
+
+
+
+
+
+
+</body>
+
+<footer class="footer">
+    <p>© 2024 Hostel Buddies. All rights reserved.</p>
+</footer>
+
+
+</html>
